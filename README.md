@@ -1,4 +1,35 @@
-# Social DB
+<!-- markdownlint-disable MD014 -->
+<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD041 -->
+<!-- markdownlint-disable MD029 -->
+
+<div align="center">
+
+<h1 style="font-size: 2.5rem; font-weight: bold;">near-graph-db</h1>
+
+  <p>
+    <strong>account-based data storage system built on NEAR</strong>
+  </p>
+
+</div>
+
+<!-- <details>
+  <summary>Table of Contents</summary>
+
+- [Getting Started](#getting-started)
+
+
+</details> -->
+
+This project is a decentralized, permissioned data storage system built on NEAR Protocol. At its core, it resembles a graph database embedded in a smart contract, where user data is stored under account-based keys, following a tree-like structure.
+
+This structure allows users to define and store hierarchical data, such as profiles, by using keys and subkeys that represent paths within the data.
+
+> [!IMPORTANT]  
+>
+> This is a fork of [Evgeny Kuzyakov](https://github.com/evgenykuzyakov)'s [social-db](https://github.com/NearSocial/social-db) with no altercations (yet), primarily repackaged for educational reasons and to faciliate better distribution.
+>
+> See it in action for social data on [Near Social](https://near.social/#/)!
 
 ## Notes
 
@@ -233,6 +264,3 @@ near view $CONTRACT_ID get '{"keys":["**"]}'
 # Full account's data
 near view $CONTRACT_ID get '{"keys":["'$ACCOUNT_ID'/**"]}'
 ```
-
-
-
